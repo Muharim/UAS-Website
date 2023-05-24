@@ -9,6 +9,9 @@ export const Canvas = ({toggleCanvas}) => {
             <li className='py-[12px] hover:text-softRed text-[18px]'><a href="#">Home</a></li> 
             <li className='py-[12px] hover:text-softRed text-[18px]'><a href="#">New</a></li> 
             <li className='py-[12px] hover:text-softRed text-[18px]'><a href="#">Popular</a></li>
+            <li className='py-[12px] hover:text-softRed text-[18px]'><a href="#">Log In</a></li>
+            <li className='hidden py-[12px] hover:text-softRed text-[18px]'><a href="#">Log Out</a></li>
+            
         </ul> 
       </div>
     </div>
