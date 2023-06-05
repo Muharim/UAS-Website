@@ -10,7 +10,7 @@ import { Link, Head } from '@inertiajs/react';
 export default function PopularNews(props) {
     console.log('popi',props)
     return (
-        <div className='min-h-screen bg-white font-sans'>
+        <div className='min-h-screen bg-white font-sans Laptop:px-[160px] Laptop:py-[90px]'>
             <Head title={props.title} />
             <Navbar user={props.auth.user}/>
             <div className='px-5 text-black'>

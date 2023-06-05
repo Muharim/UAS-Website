@@ -6,7 +6,7 @@ export const NewPost = ({news, meta}) => {
   console.log('prips', news)
   return (
     <div>      
-        <div className="flex flex-col bg-VDB text-offWhite px-[22px] pt-[20px] pb-[28px] Laptop:w-[344px]">
+        <div className="flex flex-col bg-VDB text-offWhite px-[22px] pt-[20px] pb-[28px] Laptop:w-[100%]">
             <Link href={route('new')} className="text-[32px] font-bold text-softOrange">Latest News!</Link>
             {
               news ? news.map((data, i) => {

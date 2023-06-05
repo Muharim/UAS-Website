@@ -11,7 +11,7 @@ export default function NewsDetail(props) {
     console.log('xixi',props)
     console.log('xixixi',props.news[0].image)
     return (
-        <div className='min-h-screen bg-white font-sans'>
+        <div className='min-h-screen bg-white font-sans Laptop:px-[160px] Laptop:py-[90px]'>
             <Head title={props.title} />
             <Navbar user={props.auth.user}/>
             <div className='px-5 text-black pb-[52px]'>
@@ -23,14 +23,6 @@ export default function NewsDetail(props) {
                 <div className='flex justify-end px-[12px]'>
                     <p className='text-lg mt-[100px]'>author : {props.news[0].author}</p>
                 </div>
-
-                {/* <h1>{props.desc}</h1>
-                <div className='flex justify-center flex-col lg:flex-row lg:flex-wrap lg:flex-scretch items-center gap-4 p-4'>
-                    <NewsList news={props.news.data} />
-                </div>
-                <div className='flex justify-center items-center mt-2'>
-                    <Paginator meta={props.news.meta} />
-                </div> */}
             </div>
         </div>
     )

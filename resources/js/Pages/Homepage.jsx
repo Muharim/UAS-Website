@@ -10,26 +10,20 @@ import { Link, Head } from '@inertiajs/react';
 export default function HomePage(props) {
     console.log(props)
     return (
-        <div className='min-h-screen bg-white font-sans'>
+        <div className='pt-[28px] bg-white px-[16px] pb-[64px] font-Inter Laptop:px-[160px] Laptop:pt-[90px]'>
             <Head title={props.title} />
             <Navbar user={props.auth.user}/>
-            <div className='px-5 text-black'>
+            <div className='px-5 text-black Laptop:flex Laptop:gap-[30px] Laptop:relative Laptop:bottom-[6px]'>
                 <MainPost
-                    data = {props.newsAll[10]}
+                    data = {props.newsAll[9]}
                     srcImg={"./build/assets/image/image-web-3-mobile.jpg"}
                     Title={"The Bright Future of Web 3.0?"}
                     Caption={"We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?"}
                 />
                 <NewPost news={props.news.data} meta={props.news.meta}/>
-                <PopularPost data={props.newsAll} />
-
-                {/* <h1>{props.desc}</h1>
-                <div className='flex justify-center flex-col lg:flex-row lg:flex-wrap lg:flex-scretch items-center gap-4 p-4'>
-                    <NewsList news={props.news.data} />
-                </div>
-                <div className='flex justify-center items-center mt-2'>
-                    <Paginator meta={props.news.meta} />
-                </div> */}
+            </div>
+            <div className='px-5 text-black'>
+            <PopularPost data={props.newsAll} />
             </div>
         </div>
     )

@@ -11,14 +11,13 @@ export const Canvas = ({toggleCanvas, user}) => {
           <>
             <ul className='pt-[160px] text-black'>
                     <li className='py-[12px] hover:text-softRed text-[18px]'><Link href={route('login')}>Login</Link></li>
-                    <li className='py-[12px] hover:text-softRed text-[18px]'><Link href={route('register')}>Register</Link></li>
-                    <li className='py-[12px] hover:text-softRed text-[18px]'><Link>New</Link></li>
-                    <li className='py-[12px] hover:text-softRed text-[18px]'><Link>Popular</Link></li>
+                    <li className='py-[12px] hover:text-softRed text-[18px]'><Link href={route('new')}>New</Link></li>
+                    <li className='py-[12px] hover:text-softRed text-[18px]'><Link href={route('popular')}>Popular</Link></li>
             </ul> 
           </>
           :
           <>
-            <h1 className='mt-[100px] text-3xl text-black font-bold'>Halo, {user.name}</h1>
+            <h1 className='mt-[100px] text-3xl text-black font-bold'>Halo, {user.name}!</h1>
             <ul className='pt-[20px] text-black'>
               <li className='py-[12px] hover:text-softRed text-[18px]'><Link href={route('dashboard')}>Dashboard</Link></li>
               <li className='py-[12px] hover:text-softRed text-[18px]'><Link href={route('new')}>New</Link></li>

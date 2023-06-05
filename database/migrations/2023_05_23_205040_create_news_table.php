@@ -19,7 +19,6 @@ return new class extends Migration
             $table->string('author');
             $table->string('image');
             $table->longText('content');
-            $table->string('terbit');
             $table->timestamps();
         });
     }

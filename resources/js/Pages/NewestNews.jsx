@@ -10,7 +10,7 @@ import { Link, Head } from '@inertiajs/react';
 export default function NewestNews(props) {
     console.log(props)
     return (
-        <div className='min-h-screen bg-white font-sans'>
+        <div className='min-h-screen bg-white font-sans pb-8 Laptop:px-[160px] Laptop:py-[90px]'>
             <Head title={props.title} />
             <Navbar user={props.auth.user}/>
             <div className='px-5 text-black'>

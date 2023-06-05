@@ -22,6 +22,9 @@ export default {
                 DGB: 'hsl(236, 13%, 42%)',
                 VDB: 'hsl(240, 100%, 5%)',
             },
+            screens: {
+            'Laptop': '1440px',
+            },
         },
     },
 

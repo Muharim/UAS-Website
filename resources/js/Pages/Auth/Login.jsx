@@ -66,7 +66,7 @@ export default function Login({ status, canResetPassword }) {
                     <InputError message={errors.password} className="mt-2" />
                 </div>
 
-                <div className="block mt-4">
+                <div className="block mt-4 flex justify-between">
                     <label className="flex items-center">
                         <Checkbox
                             name="remember"
@@ -75,10 +75,8 @@ export default function Login({ status, canResetPassword }) {
                         />
                         <span className="ml-2 text-sm text-gray-600">Remember me</span>
                     </label>
-                </div>
-
-                <div className="flex items-center justify-end mt-4">
-                    {canResetPassword && (
+                    <div>
+                        {canResetPassword && (
                         <Link
                             href={route('password.request')}
                             className="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
@@ -86,10 +84,17 @@ export default function Login({ status, canResetPassword }) {
                             Forgot your password?
                         </Link>
                     )}
+                    </div>
+                </div>
 
-                    <PrimaryButton className="ml-4" disabled={processing}>
+                <div className="flex items-center justify-center mt-4">
+
+                    <PrimaryButton className="" disabled={processing}>
                         Log in
                     </PrimaryButton>
+                </div>
+                <div className='mt-[20px]'>
+                    <Link href={route('register')} className='underline text-center text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500' ><p>Don't have an account?</p></Link>
                 </div>
             </form>
         </GuestLayout>
